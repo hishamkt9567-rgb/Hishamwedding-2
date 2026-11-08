@@ -41,7 +41,7 @@
     </nav>
   </div>
 
-  <!-- Opening Screen (Minimalist Luxury Cover) -->
+  <!-- Opening Screen (Minimalist Cover) -->
   <section id="opening" class="opening-screen" aria-label="Wedding invitation cover">
     <div class="opening-content">
       <div class="opening-top">
@@ -69,9 +69,17 @@
   <!-- Main Website Content -->
   <main id="website" hidden>
     
-    <!-- PAGE 1 (Right after opening): Hero Page with Chandelier Background -->
+    <!-- PAGE 1: Hero Page with Chandelier Background -->
     <section class="page hero-page" id="hero">
-      <div class="hero-overlay"></div>
+      <div class="hero-bg-container">
+        <img 
+          src="hero.jpg" 
+          alt="Chandelier Ballroom" 
+          class="hero-bg-img"
+          onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=1500&q=80';">
+        <div class="hero-overlay"></div>
+      </div>
+      
       <div class="hero-content reveal">
         <h1 class="hero-names">MUHAMMED HISHAM &amp;<br>ANEENA JUBIN</h1>
         <div class="hero-rule"></div>
@@ -97,12 +105,11 @@
       </div>
     </section>
 
-    <!-- PAGE 3: THE COUPLE (Arched Photo Page) -->
+    <!-- PAGE 3: THE COUPLE (Arch Photo Card) -->
     <section class="page couple-page" id="couple">
       <div class="page-content reveal">
         <h2 class="large-page-title">THE COUPLE</h2>
         
-        <!-- Arch Photo Frame Card -->
         <div class="couple-card-frame">
           <div class="arch-photo-container">
             <img 
@@ -190,7 +197,6 @@
           <p class="location-town">MUNDITHODIKA, MALAPPURAM</p>
           <p class="location-timing">SUNDAY, 27 DECEMBER 2026<br>4:00 PM – 8:00 PM</p>
 
-          <!-- Route Illustration Card -->
           <div class="location-map-card">
             <div class="map-illustration">
               <svg viewBox="0 0 320 130" fill="none" stroke="#cfc3ab" stroke-width="1.2">
