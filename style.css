@@ -252,19 +252,42 @@ button {
   justify-content: center;
   text-align: center;
   padding: 60px 20px;
-  background: #fbf9f5 url('https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=1500&q=80') center center / cover no-repeat;
+  overflow: hidden;
+  background: #faf8f5;
+}
+
+.hero-bg-container {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.hero-bg-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+  display: block;
 }
 
 .hero-overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(to bottom, rgba(250, 248, 245, 0.88), rgba(250, 248, 245, 0.94));
-  z-index: 1;
+  /* Balanced lighting gradient so golden chandelier remains visible */
+  background: linear-gradient(
+    to bottom, 
+    rgba(250, 248, 245, 0.45) 0%, 
+    rgba(250, 248, 245, 0.65) 60%, 
+    rgba(250, 248, 245, 0.95) 100%
+  );
+  z-index: 2;
 }
 
 .hero-content {
   position: relative;
-  z-index: 2;
+  z-index: 3;
   max-width: 580px;
   margin-top: 40px;
 }
